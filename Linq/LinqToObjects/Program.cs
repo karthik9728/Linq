@@ -4,16 +4,23 @@
     {
         static void Main(string[] args)
         {
-            // Filtering Where and TypeOf
+            #region Filters (Where and TypeOf)
+
             //Filters.LinqWhere();
 
             //Filters.LinqOfType();
+
+            #endregion
+
+            #region Projection Operations (Select, SelectMany, Zip)
 
             //ProjectionOperations.SelectOperator();
 
             //ProjectionOperations.SelectManyOperator();
 
-            ProjectionOperations.ZipOperator();
+            //ProjectionOperations.ZipOperator();
+
+            #endregion
 
         }
     }
