@@ -8,6 +8,7 @@
     /// </list>
     /// Traditional loops tell the system how to iterate and process data. LINQ abstracts iteration and lets us focus on what data we want, making code more readable, reusable, and expressive.
     /// Linq works on IEnumerable or IQueryable
+    /// <seealso href="https://learn.microsoft.com/en-us/dotnet/csharp/linq/">Official Microsoft LINQ Documentation</seealso>
     /// </summary>
     public class Program
     {
