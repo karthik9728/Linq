@@ -3,9 +3,11 @@
     /// <summary>
     /// LINQ (Language Integrated Query) is a declarative querying capability in C# that allows you to query, filter, transform, and aggregate data from different data sources (objects, databases, XML, JSON, etc.) using a consistent, type-safe syntax integrated into the language.
     /// <list type="number">
-    /// <item> Imperative means: You explicitly tell the program step by step what to do.</item>
-    /// <item> Declarative means: You describe the result, not the steps.</item>
+    /// <item>Imperative means: You tell the computer step-by-step instructions.</item>
+    /// <item>Declarative means: You describe the result, not the steps.</item>
     /// </list>
+    /// Traditional loops tell the system how to iterate and process data. LINQ abstracts iteration and lets us focus on what data we want, making code more readable, reusable, and expressive.
+    /// Linq works on IEnumerable or IQueryable
     /// </summary>
     public class Program
     {
