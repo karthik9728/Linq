@@ -10,7 +10,7 @@ namespace LinqToObjects
     public static class ProjectionOperations
     {
         // Get Data
-        private static List<Employee> employees = DataProvider.GetEmployees();
+        private static List<Employee> Employees = DataProvider.GetEmployees();
 
         /// <summary>
         /// Projects values that are based on a transform function.
@@ -19,12 +19,12 @@ namespace LinqToObjects
         {
             // Query Syntax
             Console.WriteLine("----------Query Syntax----------");
-            //var linqQuery = from employee in employees
+            //var linqQuery = from employee in Employees
             //                where employee.Team == Team.DevOps
             //                select (employee.Id, employee.Name);
 
             //anonymous type
-            var linqQuery = from employee in employees
+            var linqQuery = from employee in Employees
                             where employee.Team == Team.DevOps
                             select new
                             {
@@ -39,7 +39,7 @@ namespace LinqToObjects
 
             // Method Syntax
             Console.WriteLine("---------Method Syntax----------");
-            var linqMethod = employees.Where(x => x.Team == Team.DevOps)
+            var linqMethod = Employees.Where(x => x.Team == Team.DevOps)
                                       .Select(employee => new
                                       {
                                           Id = employee.Id,
@@ -59,12 +59,12 @@ namespace LinqToObjects
         {
             // Query Syntax
             Console.WriteLine("----------Query Syntax----------");
-            //var linqQuery = from employee in employees
+            //var linqQuery = from employee in Employees
             //                where employee.Team == Team.DevOps
             //                select (employee.Id, employee.Name);
 
             //anonymous type
-            var linqQuery = from employee in employees
+            var linqQuery = from employee in Employees
                             where employee.Team == Team.ResearchAndDevelopment
                             from e in employee.Name.ToArray()
                             select e;
@@ -76,7 +76,7 @@ namespace LinqToObjects
 
             // Method Syntax
             Console.WriteLine("\n---------Method Syntax----------");
-            var linqMethod = employees.Where(x => x.Team == Team.ResearchAndDevelopment)
+            var linqMethod = Employees.Where(x => x.Team == Team.ResearchAndDevelopment)
                                       .SelectMany(employee => employee.Name.ToArray());
 
             foreach (var x in linqMethod)
@@ -90,7 +90,7 @@ namespace LinqToObjects
         /// </summary>
         public static void ZipOperator()
         {
-            var topEmployees = employees.Take(5);
+            var topEmployees = Employees.Take(5);
 
             var salaries = new List<decimal> { 5000, 6000, 5500, 7000, 6500 };
 

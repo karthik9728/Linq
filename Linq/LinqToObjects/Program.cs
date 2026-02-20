@@ -22,6 +22,13 @@
 
             #endregion
 
+            #region Set Operations (Distinct, DistinctBy)
+
+            SetOperations.DistinctOperator();
+
+            SetOperations.DistinctByOperator();
+
+            #endregion
         }
     }
 }

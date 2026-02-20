@@ -9,13 +9,13 @@ namespace LinqToObjects
     public static class Filters
     {
         // Get Data
-        private static List<Employee> employees = DataProvider.GetEmployees();
+        private static List<Employee> Employees = DataProvider.GetEmployees();
 
         public static void LinqWhere()
         {
             // Query Syntax
             Console.WriteLine("----------Query Syntax----------");
-            IEnumerable<Employee> linqQuery = from employee in employees where employee.Name.Equals("Bob Smith") select employee;
+            IEnumerable<Employee> linqQuery = from employee in Employees where employee.Name.Equals("Bob Smith") select employee;
 
             foreach (var employee in linqQuery)
             {
@@ -24,11 +24,11 @@ namespace LinqToObjects
 
             // Method Syntax
             Console.WriteLine("---------Method Syntax----------");
-            //IEnumerable<Employee> linqMethod = employees.Where(x => x.Name.Equals("Diana Prince"));
-            //IEnumerable<Employee> linqMethod = employees.Where(x => x.Name.Equals("Diana Prince")).Select(employee => employee);
+            //IEnumerable<Employee> linqMethod = Employees.Where(x => x.Name.Equals("Diana Prince"));
+            //IEnumerable<Employee> linqMethod = Employees.Where(x => x.Name.Equals("Diana Prince")).Select(employee => employee);
 
-            //IEnumerable<Employee> linqMethod = employees.Where(x => x.Name == "Diana Prince");
-            IEnumerable<Employee> linqMethod = employees.Where(x => x.Name == "Diana Prince").Select(employee => employee);
+            //IEnumerable<Employee> linqMethod = Employees.Where(x => x.Name == "Diana Prince");
+            IEnumerable<Employee> linqMethod = Employees.Where(x => x.Name == "Diana Prince").Select(employee => employee);
 
             foreach (var employee in linqMethod)
             {
@@ -38,7 +38,7 @@ namespace LinqToObjects
 
         public static void LinqOfType()
         {
-            IEnumerable<Manager> managers = employees.OfType<Manager>();
+            IEnumerable<Manager> managers = Employees.OfType<Manager>();
 
             Console.WriteLine("----------Managers List---------");
 
@@ -47,7 +47,7 @@ namespace LinqToObjects
                 Console.WriteLine($"Name:{employee.Name}, Team:{employee.Team}");
             }
 
-            IEnumerable<SecurityEngineer> securityEngineer = employees.OfType<SecurityEngineer>();
+            IEnumerable<SecurityEngineer> securityEngineer = Employees.OfType<SecurityEngineer>();
 
             Console.WriteLine("----------Security Engineers List---------");
 
