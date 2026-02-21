@@ -41,14 +41,12 @@ namespace LinqToObjects
 
             // Each object instance is unique in memory, so Distinct() treats objects 
             // with the same values as different unless equality is properly overridden.
-
             //var linqQuery = (from employee in Employees select employee).Distinct();
 
             //foreach (var employee in linqQuery)
             //{
             //    Console.WriteLine($"Id:{employee.Id},Name:{employee.Name}");
             //}
-
 
             // Method Syntax
             Console.WriteLine("\n---------Method Syntax----------");
@@ -143,12 +141,14 @@ namespace LinqToObjects
 
 
             //"Give me Spring employees whose Id does NOT exist in Winter."
-            Console.WriteLine("----------Full Employee List----------");
+            Console.WriteLine("----------Concat:Full Employee List----------");
 
             foreach (var emp in springEmployees.Concat(winterEmployees))
             {
                 Console.Write($"{emp.Name}({emp.Id})" + "|");
             }
+
+            Console.WriteLine();
 
             // Query Syntax
             Console.WriteLine("\n----------Query Syntax----------");
@@ -159,6 +159,8 @@ namespace LinqToObjects
 
                 Console.Write($"{emp.Name}({emp.Id})" + "|");
             }
+
+            Console.WriteLine();
 
 
             // Method Syntax
@@ -172,6 +174,7 @@ namespace LinqToObjects
                 Console.Write($"{emp.Name}({emp.Id})" + "|");
             }
 
+            Console.WriteLine();
         }
 
         /// <summary>

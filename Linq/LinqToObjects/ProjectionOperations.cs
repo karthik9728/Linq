@@ -59,11 +59,6 @@ namespace LinqToObjects
         {
             // Query Syntax
             Console.WriteLine("----------Query Syntax----------");
-            //var linqQuery = from employee in Employees
-            //                where employee.Team == Team.DevOps
-            //                select (employee.Id, employee.Name);
-
-            //anonymous type
             var linqQuery = from employee in Employees
                             where employee.Team == Team.ResearchAndDevelopment
                             from e in employee.Name.ToArray()
@@ -71,7 +66,7 @@ namespace LinqToObjects
 
             foreach (var x in linqQuery)
             {
-                Console.Write($"{x}");
+                Console.Write($"{x} |");
             }
 
             // Method Syntax
@@ -81,7 +76,7 @@ namespace LinqToObjects
 
             foreach (var x in linqMethod)
             {
-                Console.Write($"{x}");
+                Console.Write($"{x} |");
             }
         }
 
@@ -95,7 +90,7 @@ namespace LinqToObjects
             var salaries = new List<decimal> { 5000, 6000, 5500, 7000, 6500 };
 
             // Methods Syntax (Zip is method syntax)
-            Console.WriteLine("---------Zip Operator----------");
+            Console.WriteLine("\n---------Zip Operator----------");
             var employeeWithSalary = topEmployees.Zip(salaries, (emp, sal) => new
                                     {
                                         Name = emp.Name,
