@@ -5,10 +5,10 @@ namespace Linq.Utils
 {
     public static class DataProvider
     {
-        public static List<int> GetNumbers()
-        {
-            return new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 12, 15, 16, 17, 8, 18, 10, 19, 20 };
-        }
+        public static List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 12, 15, 16, 17, 8, 18, 10, 19, 20 };
+
+        public static string[] Box1 = ["Notebook", "Pen", "Map", "Backpack"];
+        public static string[] Box2 = ["Bat", "Ball", "Pen", "Stumps"];
 
         public static List<Employee> GetEmployees()
         {
@@ -74,17 +74,6 @@ namespace Linq.Utils
                         new Employee(1, "Alice Johnson", "alice.johnson@company.com", new DateOnly(2020, 1, 15), Team.Development),
                         new Employee(2, "Bob Smith", "bob.smith@company.com", new DateOnly(2019, 3, 10), Team.DevOps),
                         new Employee(3, "Charlie Brown", "charlie.brown@company.com", new DateOnly(2021, 6, 5), Team.Testing),
-                        new Employee(4, "Diana Prince", "diana.prince@company.com", new DateOnly(2018, 11, 20), Team.QA),
-                        new Employee(5, "Ethan Clark", "ethan.clark@company.com", new DateOnly(2022, 2, 1), Team.ProductManagement),
-                        new Employee(6, "Fiona Davis", "fiona.davis@company.com", new DateOnly(2020, 7, 18), Team.UXUI),
-                        new Employee(7, "George Miller", "george.miller@company.com", new DateOnly(2017, 9, 9), Team.DataEngineering),
-                        new Employee(8, "Hannah Wilson", "hannah.wilson@company.com", new DateOnly(2023, 1, 12), Team.Security),
-                        new Employee(9, "Ian Moore", "ian.moore@company.com", new DateOnly(2019, 4, 30), Team.Support),
-                        new Employee(10, "Jane Taylor", "jane.taylor@company.com", new DateOnly(2016, 12, 3), Team.ResearchAndDevelopment),
-                        new Employee(11, "Kevin Anderson", "kevin.anderson@company.com", new DateOnly(2020, 8, 14), Team.Development),
-                        new Employee(12, "Laura Thomas", "laura.thomas@company.com", new DateOnly(2021, 9, 25), Team.DevOps),
-                        new Employee(13, "Michael White", "michael.white@company.com", new DateOnly(2018, 5, 17), Team.Testing),
-                        new Employee(14, "Nina Harris", "nina.harris@company.com", new DateOnly(2022, 10, 11), Team.QA),
                         new Employee(15, "Oscar Martin", "oscar.martin@company.com", new DateOnly(2019, 6, 6), Team.ProductManagement),
                         new Employee(23, "William Young", "william.young@company.com", new DateOnly(2018, 8, 28), Team.Testing),
                     }
@@ -103,18 +92,10 @@ namespace Linq.Utils
                     Name = "Winter Security",
                     Employees = new List<Employee>()
                     {
-                        new Employee(27, "Aaron Baker", "aaron.baker@company.com", new DateOnly(2016, 4, 2), Team.DataEngineering),
                         new Employee(5, "Ethan Clark", "ethan.clark@company.com", new DateOnly(2022, 2, 1), Team.ProductManagement),
-                        new Employee(6, "Fiona Davis", "fiona.davis@company.com", new DateOnly(2020, 7, 18), Team.UXUI),
-                        new Employee(7, "George Miller", "george.miller@company.com", new DateOnly(2017, 9, 9), Team.DataEngineering),
+                        new Employee(23, "William Young", "william.young@company.com", new DateOnly(2018, 8, 28), Team.Testing),
                         new SecurityEngineer(35, "Ryan Mitchell", "ryan.mitchell@company.com", new DateOnly(2020, 3, 15), Team.Security,SecurityTeam.BlueTeam),
                         new SecurityEngineer(36, "Marcus Reed", "marcus.reed@company.com", new DateOnly(2020, 6, 6), Team.Security, SecurityTeam.RedTeam),
-                        new SecurityEngineer(37, "Sophia Bennett", "sophia.bennett@company.com", new DateOnly(2021, 7, 7), Team.Security, SecurityTeam.ThreatHunting),
-                        new SecurityEngineer(38, "Aiden Brooks", "aiden.brooks@company.com", new DateOnly(2019, 8, 21), Team.Security, SecurityTeam.PurpleTeam),
-                        new SecurityEngineer(39, "Chloe Ramirez", "chloe.ramirez@company.com", new DateOnly(2022, 2, 10), Team.Security, SecurityTeam.SOC),
-                        new SecurityEngineer(40, "Ethan Hayes", "ethan.hayes@company.com", new DateOnly(2018, 11, 5), Team.Security, SecurityTeam.IncidentResponse),
-                        new SecurityEngineer(41, "Maya Patel", "maya.patel@company.com", new DateOnly(2021, 4, 18), Team.Security, SecurityTeam.GovernanceRiskCompliance),
-                        new SecurityEngineer(42, "Liam O'Connor", "liam.oconnor@company.com", new DateOnly(2020, 12, 30), Team.Security, SecurityTeam.BlueTeam),
                     }
                 }
             };

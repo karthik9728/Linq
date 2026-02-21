@@ -22,11 +22,15 @@
 
             #endregion
 
-            #region Set Operations (Distinct, DistinctBy)
+            #region Set Operations (Distinct, DistinctBy, Except, ExceptBy)
 
-            SetOperations.DistinctOperator();
+            //SetOperations.DistinctOperator();
 
-            SetOperations.DistinctByOperator();
+            //SetOperations.DistinctByOperator();
+
+            //SetOperations.ExceptOperator();
+
+            SetOperations.ExceptByOperator();
 
             #endregion
         }

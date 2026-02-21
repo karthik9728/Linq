@@ -9,7 +9,9 @@ namespace LinqToObjects
     public class SetOperations
     {
         // Get Data
-        private static List<int> Numbers = DataProvider.GetNumbers();
+        private static List<int> Numbers = DataProvider.Numbers;
+        private static string[] Box1 = DataProvider.Box1;
+        private static string[] Box2 = DataProvider.Box2;
         private static List<Employee> Employees = DataProvider.GetEmployees();
 
         private static List<Event> SpringCodingEventMembers = DataProvider.GetSpringCodingEvent();
@@ -90,6 +92,86 @@ namespace LinqToObjects
             {
                 Console.WriteLine($"Id:{employee.Id},Name:{employee.Name}");
             }
+        }
+
+        /// <summary>
+        /// The returned sequence contains only the elements from the first input sequence that aren't in the second input sequence.
+        /// </summary>
+        public static void ExceptOperator()
+        {
+            Console.WriteLine("Box 1 Items");
+            foreach (var item in Box1)
+            {
+                Console.Write(item + "|");
+            }
+
+
+            Console.WriteLine("\nBox 2 Items");
+            foreach (var item in Box2)
+            {
+                Console.Write(item + "|");
+            }
+
+            // Query Syntax
+            Console.WriteLine("\n----------Query Syntax----------");
+            var linqQuery = from item in Box1.Except(Box2) select item;
+
+            foreach (var item in linqQuery)
+            {
+                Console.WriteLine(item);
+            }
+
+
+            // Method Syntax
+            Console.WriteLine("---------Method Syntax----------");
+            var linqMethod = Box1.Except(Box2).Select(item => item);
+
+            foreach (var item in linqMethod)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        /// <summary>
+        /// The returned sequence contains only the elements from the first input sequence that aren't in the second input sequence.
+        /// </summary>
+        public static void ExceptByOperator()
+        {
+            // Flatten nested collections
+            var springEmployees = SpringCodingEventMembers.SelectMany(e => e.Employees);
+            var winterEmployees = WinterSecurityEventMembers.SelectMany(e => e.Employees);
+
+
+            //"Give me Spring employees whose Id does NOT exist in Winter."
+            Console.WriteLine("----------Full Employee List----------");
+
+            foreach (var emp in springEmployees.Concat(winterEmployees))
+            {
+                Console.Write($"{emp.Name}({emp.Id})" + "|");
+            }
+
+            // Query Syntax
+            Console.WriteLine("\n----------Query Syntax----------");
+            var linqQuery = from emp in springEmployees.ExceptBy(winterEmployees.Select(we => we.Id), sp => sp.Id) select emp;
+
+            foreach (var emp in linqQuery)
+            {
+
+                Console.Write($"{emp.Name}({emp.Id})" + "|");
+            }
+
+
+            // Method Syntax
+            Console.WriteLine("\n---------Method Syntax----------");
+            //var linqMethod = springEmployees.ExceptBy(winterEmployees.Select(we => we.Id), sp => sp.Id).Select(emp => emp);
+            var linqMethod = springEmployees.ExceptBy(winterEmployees.Select(we => we.Id), sp => sp.Id);
+
+            foreach (var emp in linqMethod)
+            {
+
+                Console.Write($"{emp.Name}({emp.Id})" + "|");
+            }
+
         }
     }
 }
