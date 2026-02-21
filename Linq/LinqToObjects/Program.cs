@@ -22,7 +22,7 @@
 
             #endregion
 
-            #region Set Operations (Distinct, DistinctBy, Except, ExceptBy)
+            #region Set Operations (Distinct, DistinctBy, Except, ExceptBy, Intersect, IntersectBy, Union, UnionBy)
 
             //SetOperations.DistinctOperator();
 
@@ -30,7 +30,11 @@
 
             //SetOperations.ExceptOperator();
 
-            SetOperations.ExceptByOperator();
+            //SetOperations.ExceptByOperator();
+
+            //SetOperations.IntersectOperator();
+
+            //SetOperations.IntersectByOperator();
 
             #endregion
         }

@@ -173,5 +173,86 @@ namespace LinqToObjects
             }
 
         }
+
+        /// <summary>
+        /// Returns the set intersection, which means elements that appear in each of two collections.
+        /// The returned sequence contains the elements that are common to both of the input sequences.
+        /// </summary>
+        public static void IntersectOperator()
+        {
+            Console.WriteLine("Box 1 Items");
+            foreach (var item in Box1)
+            {
+                Console.Write(item + "|");
+            }
+
+
+            Console.WriteLine("\nBox 2 Items");
+            foreach (var item in Box2)
+            {
+                Console.Write(item + "|");
+            }
+
+            // Query Syntax
+            Console.WriteLine("\n----------Query Syntax----------");
+            var linqQuery = from item in Box1.Intersect(Box2) select item;
+
+            foreach (var item in linqQuery)
+            {
+                Console.WriteLine(item);
+            }
+
+
+            // Method Syntax
+            Console.WriteLine("---------Method Syntax----------");
+            var linqMethod = Box1.Intersect(Box2).Select(item => item);
+
+            foreach (var item in linqMethod)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        /// <summary>
+        /// The returned sequence contains the elements that are common to both of the input sequences.
+        /// </summary>
+        public static void IntersectByOperator()
+        {
+            // Flatten nested collections
+            var springEmployees = SpringCodingEventMembers.SelectMany(e => e.Employees);
+            var winterEmployees = WinterSecurityEventMembers.SelectMany(e => e.Employees);
+
+
+            //"Give me Spring employees whose Id does NOT exist in Winter."
+            Console.WriteLine("----------Full Employee List----------");
+
+            foreach (var emp in springEmployees.Concat(winterEmployees))
+            {
+                Console.Write($"{emp.Name}({emp.Id})" + "|");
+            }
+
+            // Query Syntax
+            Console.WriteLine("\n----------Query Syntax----------");
+            var linqQuery = from emp in springEmployees.IntersectBy(winterEmployees.Select(we => we.Id), sp => sp.Id) select emp;
+
+            foreach (var emp in linqQuery)
+            {
+
+                Console.Write($"{emp.Name}({emp.Id})" + "|");
+            }
+
+
+            // Method Syntax
+            Console.WriteLine("\n---------Method Syntax----------");
+            //var linqMethod = springEmployees.IntersectBy(winterEmployees.Select(we => we.Id), sp => sp.Id).Select(emp => emp);
+            var linqMethod = springEmployees.IntersectBy(winterEmployees.Select(we => we.Id), sp => sp.Id);
+
+            foreach (var emp in linqMethod)
+            {
+
+                Console.Write($"{emp.Name}({emp.Id})" + "|");
+            }
+
+        }
     }
 }
