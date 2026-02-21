@@ -36,6 +36,10 @@
 
             //SetOperations.IntersectByOperator();
 
+            //SetOperations.UnionOperator();
+
+            //SetOperations.UnionByOperator();
+
             #endregion
         }
     }
