@@ -41,6 +41,20 @@
             //SetOperations.UnionByOperator();
 
             #endregion
+
+            #region Sorting (OrderBy, OrderByDescending, ThenBy, ThenByDescending, Reverse)
+
+            //Sorting.LinqOrderBy();
+
+            //Sorting.LinqOrderByDescending();
+
+            //Sorting.LinqThenBy();
+
+            //Sorting.LinqThenByDescending();
+
+            //Sorting.LinqReverse();
+
+            #endregion
         }
     }
 }

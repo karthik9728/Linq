@@ -100,6 +100,23 @@ namespace Linq.Utils
                 }
             };
         }
+
+        public static List<StudentExamReport> GetStudentExamReports()
+        {
+            return new List<StudentExamReport>()
+            {
+                new StudentExamReport(1, "Alice Johnson", 95, Grade.A),
+                new StudentExamReport(2, "Bob Smith", 85, Grade.B),
+                new StudentExamReport(3, "Charlie Brown", 76, Grade.C),
+                new StudentExamReport(4, "Diana Prince", 88, Grade.B),
+                new StudentExamReport(5, "Ethan Clark", 67, Grade.D),
+                new StudentExamReport(6, "Fiona Davis", 97, Grade.A),
+                new StudentExamReport(7, "George Miller", 73, Grade.C),
+                new StudentExamReport(8, "Hannah Wilson", 59, Grade.F),
+                new StudentExamReport(9, "Ian Moore", 84, Grade.B),
+                new StudentExamReport(10, "Julia Taylor", 78, Grade.C)
+            };
+        }
     }
 }
 
