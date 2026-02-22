@@ -5,10 +5,11 @@ namespace Linq.Utils
 {
     public static class DataProvider
     {
-        public static List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 12, 15, 16, 17, 8, 18, 10, 19, 20 };
+        public static List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 12, 15, 16, 17, 8, 18, 10, 19, 20, 10 };
 
         public static string[] Box1 = ["Notebook", "Pen", "Map", "Backpack"];
         public static string[] Box2 = ["Bat", "Ball", "Pen", "Stumps"];
+        public static string[] OfficeSupplies = new string[] { "Stapler", "Paper Clips", "Sticky Notes", "Binder", "Pen Holder", "Highlighter", "Notebook", "Scissors", "Calculator", "Desk Organizer" };
 
         public static List<Employee> GetEmployees()
         {

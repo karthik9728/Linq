@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+
             #region Filters (Where and TypeOf)
 
             //Filters.LinqWhere();
@@ -63,6 +65,22 @@
             //QuantifierOperations.LinqAny();
 
             //QuantifierOperations.LinqContains();
+
+            #endregion
+
+            #region Partitioning (Skip, Take, SkipWhile, TakeWhile, Chunk)
+
+            //Partitioning.LinqSkip();
+
+            //Partitioning.LinqTake();
+
+            //Partitioning.LinqSkipAndTake();
+
+            //Partitioning.LinqSkipWhile();
+
+            //Partitioning.LinqTakeWhile();
+
+            //Partitioning.LinqChunk();
 
             #endregion
         }
