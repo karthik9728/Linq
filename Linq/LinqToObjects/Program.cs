@@ -55,6 +55,16 @@
             //Sorting.LinqReverse();
 
             #endregion
+
+            #region Quantifier Operations (All, Any, Contains)
+
+            //QuantifierOperations.LinqAll();
+
+            //QuantifierOperations.LinqAny();
+
+            //QuantifierOperations.LinqContains();
+
+            #endregion
         }
     }
 }

@@ -117,6 +117,23 @@ namespace Linq.Utils
                 new StudentExamReport(10, "Julia Taylor", 78, Grade.C)
             };
         }
+
+        public static List<Product> GetProducts()
+        {
+            return new List<Product>()
+            {
+                new Product(1, "Laptop", "Electronics", 10, 800),
+                new Product(2, "Mouse", "Electronics", 0, 20),
+                new Product(3, "Keyboard", "Electronics", 15, 45),
+                new Product(4, "Desk", "Furniture", 5, 150),
+                new Product(5, "Chair", "Furniture", 2, 100),
+                new Product(6, "Notebook", "Stationery", 50, 5),
+                new Product(7, "Pen", "Stationery", 100, 2),
+                new Product(8, "Monitor", "Electronics", 7, 250),
+                new Product(9, "Cupboard", "Furniture", 1, 300),
+                new Product(10, "Sony Headphone", "Electronics", 12, 120)
+            };
+        }
     }
 }
 
