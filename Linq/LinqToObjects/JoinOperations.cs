@@ -126,7 +126,7 @@ namespace LinqToObjects
         {
             // Query Syntax
             Console.WriteLine("----------Query Syntax----------");
-            var query = from s in Students
+            var linqQuery = from s in Students
                         join c in Courses
                         on s.Id equals c.StudentId
                         into courseGroup
@@ -136,14 +136,14 @@ namespace LinqToObjects
                             Courses = courseGroup.Select(c => c.Name)
                         };
 
-            foreach (var x in query)
+            foreach (var x in linqQuery)
             {
                 Console.WriteLine($"Student: {x.Student}, Courses: {string.Join(", ", x.Courses.DefaultIfEmpty("No Course"))}");
             }
 
             // Method Syntax
             Console.WriteLine("---------Method Syntax----------");
-            var method = Students.GroupJoin(
+            var linqMethod = Students.GroupJoin(
                 Courses,
                 s => s.Id,
                 c => c.StudentId,
@@ -154,7 +154,7 @@ namespace LinqToObjects
                 }
             );
 
-            foreach (var x in method)
+            foreach (var x in linqMethod)
             {
                 Console.WriteLine($"Student: {x.Student}, Courses: {string.Join(", ", x.Courses.DefaultIfEmpty("No Course"))}");
             }

@@ -95,6 +95,14 @@
             //JoinOperations.LinqGroupJoin();
 
             #endregion
+
+            #region Grouping (GroupBy, Lookup)
+
+            //Grouping.LinqGroupBy();
+
+            Grouping.LinqToLookup();
+
+            #endregion
         }
     }
 }
