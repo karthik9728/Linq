@@ -135,6 +135,53 @@ namespace Linq.Utils
                 new Product(10, "Sony Headphone", "Electronics", 12, 120)
             };
         }
+
+        public static List<Fruit> GetFruits()
+        {
+            return new List<Fruit>
+            {
+                new Fruit(1, "Apple", 1),
+                new Fruit(2, "Banana", 2),
+                new Fruit(3, "Cherry", 1),
+                new Fruit(4, "Lemon", 3),
+                new Fruit(5, "Blueberry", 4) // no matching color
+            };
+        }
+
+        public static List<Color> GetColors()
+        {
+            return new List<Color>
+            {
+                new Color(1, "Red"),
+                new Color(2, "Yellow"),
+                new Color(3, "Green"),
+                new Color(5, "Blue") // no fruit with this color
+            };
+        }
+
+        public static List<Student> GetStudents()
+        {
+            return new List<Student>
+            {
+                new Student { Id = 1, Name = "Alice" },
+                new Student { Id = 2, Name = "Bob" },
+                new Student { Id = 3, Name = "Charlie" },
+            };
+        }
+
+        public static List<Course> GetCourses()
+        {
+            return new List<Course>
+            {
+                new Course { Id = 1, Name = "Math", StudentId = 1 },
+                new Course { Id = 2, Name = "Science", StudentId = 1 },
+                new Course { Id = 3, Name = "History", StudentId = 2 },
+                new Course { Id = 4, Name = "Art", StudentId = 2 },
+                new Course { Id = 5, Name = "PE", StudentId = 2 },
+                new Course { Id = 6, Name = "Music", StudentId = 4 } // student doesn't exist
+
+            };
+        }
     }
 }
 

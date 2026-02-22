@@ -83,6 +83,18 @@
             //Partitioning.LinqChunk();
 
             #endregion
+
+            #region Join Operations (Inner Join, LeftJoin, RightJoin, GroupJoin)
+
+            //JoinOperations.LinqJoin();
+
+            //JoinOperations.LinqLeftJoin();
+
+            //JoinOperations.LinqRightJoin();
+
+            //JoinOperations.LinqGroupJoin();
+
+            #endregion
         }
     }
 }
