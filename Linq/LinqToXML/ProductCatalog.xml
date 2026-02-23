@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Catalog>
+
+	<Product id="P001">
+		<Name>Wireless Mouse</Name>
+		<Category>Electronics</Category>
+		<Price>1200</Price>
+		<InStock>true</InStock>
+	</Product>
+
+	<Product id="P002">
+		<Name>Coffee Beans</Name>
+		<Category>Grocery</Category>
+		<Price>450</Price>
+		<InStock>false</InStock>
+	</Product>
+
+	<Product id="P003">
+		<Name>Bluetooth Speaker</Name>
+		<Category>Electronics</Category>
+		<Price>3500</Price>
+		<InStock>true</InStock>
+	</Product>
+
+	<Product id="P004">
+		<Name>Organic Honey</Name>
+		<Category>Grocery</Category>
+		<Price>650</Price>
+		<InStock>true</InStock>
+	</Product>
+
+	<Product id="P005">
+		<Name>Notebook Backpack</Name>
+		<Category>Accessories</Category>
+		<Price>2200</Price>
+		<InStock>true</InStock>
+	</Product>
+
+	<Product id="P006">
+		<Name>LED Desk Lamp</Name>
+		<Category>Home</Category>
+		<Price>1800</Price>
+		<InStock>false</InStock>
+	</Product>
+
+	<Product id="P007">
+		<Name>Running Shoes</Name>
+		<Category>Sports</Category>
+		<Price>4200</Price>
+		<InStock>true</InStock>
+	</Product>
+
+	<Product id="P008">
+		<Name>Stainless Steel Bottle</Name>
+		<Category>Home</Category>
+		<Price>950</Price>
+		<InStock>true</InStock>
+	</Product>
+
+	<Product id="P009">
+		<Name>Noise Cancelling Headphones</Name>
+		<Category>Electronics</Category>
+		<Price>8500</Price>
+		<InStock>false</InStock>
+	</Product>
+
+	<Product id="P010">
+		<Name>Yoga Mat</Name>
+		<Category>Sports</Category>
+		<Price>1200</Price>
+		<InStock>true</InStock>
+	</Product>
+
+</Catalog>
