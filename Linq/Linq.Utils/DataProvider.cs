@@ -51,14 +51,15 @@ namespace Linq.Utils
                 new Manager(33, "Olivia Martinez", "olivia.martinez@company.com", new DateOnly(2018, 4, 12), Team.DevOps),
                 new Manager(34, "Benjamin Carter", "benjamin.carter@company.com", new DateOnly(2019, 9, 3), Team.Security),
                 new Employee(23, "William Young", "william.young@company.com", new DateOnly(2018, 8, 28), Team.Testing),
-                new SecurityEngineer(35, "Ryan Mitchell", "ryan.mitchell@company.com", new DateOnly(2020, 3, 15), Team.Security,SecurityTeam.BlueTeam),
-                new SecurityEngineer(36, "Marcus Reed", "marcus.reed@company.com", new DateOnly(2020, 6, 6), Team.Security, SecurityTeam.RedTeam),
-                new SecurityEngineer(37, "Sophia Bennett", "sophia.bennett@company.com", new DateOnly(2021, 7, 7), Team.Security, SecurityTeam.ThreatHunting),
-                new SecurityEngineer(38, "Aiden Brooks", "aiden.brooks@company.com", new DateOnly(2019, 8, 21), Team.Security, SecurityTeam.PurpleTeam),
-                new SecurityEngineer(39, "Chloe Ramirez", "chloe.ramirez@company.com", new DateOnly(2022, 2, 10), Team.Security, SecurityTeam.SOC),
-                new SecurityEngineer(40, "Ethan Hayes", "ethan.hayes@company.com", new DateOnly(2018, 11, 5), Team.Security, SecurityTeam.IncidentResponse),
-                new SecurityEngineer(41, "Maya Patel", "maya.patel@company.com", new DateOnly(2021, 4, 18), Team.Security, SecurityTeam.GovernanceRiskCompliance),
-                new SecurityEngineer(42, "Liam O'Connor", "liam.oconnor@company.com", new DateOnly(2020, 12, 30), Team.Security, SecurityTeam.BlueTeam),
+                new Employee(35, "Hannah Wilson", "hannah.wilson2@company.com", new DateOnly(2024, 1, 12), Team.DevOps),
+                new SecurityEngineer(36, "Ryan Mitchell", "ryan.mitchell@company.com", new DateOnly(2020, 3, 15), Team.Security,SecurityTeam.BlueTeam),
+                new SecurityEngineer(37, "Marcus Reed", "marcus.reed@company.com", new DateOnly(2020, 6, 6), Team.Security, SecurityTeam.RedTeam),
+                new SecurityEngineer(38, "Sophia Bennett", "sophia.bennett@company.com", new DateOnly(2021, 7, 7), Team.Security, SecurityTeam.ThreatHunting),
+                new SecurityEngineer(39, "Aiden Brooks", "aiden.brooks@company.com", new DateOnly(2019, 8, 21), Team.Security, SecurityTeam.PurpleTeam),
+                new SecurityEngineer(40, "Chloe Ramirez", "chloe.ramirez@company.com", new DateOnly(2022, 2, 10), Team.Security, SecurityTeam.SOC),
+                new SecurityEngineer(41, "Ethan Hayes", "ethan.hayes@company.com", new DateOnly(2018, 11, 5), Team.Security, SecurityTeam.IncidentResponse),
+                new SecurityEngineer(42, "Maya Patel", "maya.patel@company.com", new DateOnly(2021, 4, 18), Team.Security, SecurityTeam.GovernanceRiskCompliance),
+                new SecurityEngineer(43, "Liam O'Connor", "liam.oconnor@company.com", new DateOnly(2020, 12, 30), Team.Security, SecurityTeam.BlueTeam),
             };
         }
 

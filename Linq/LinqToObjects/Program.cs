@@ -58,6 +58,16 @@
 
             #endregion
 
+            #region Element Operations (First, FirstOrDefault, Last, LastOrDefault, Single, SingleOrDefault)
+
+            //ElementOperations.LinqFirst();
+
+            //ElementOperations.LinqLast();
+
+            //ElementOperations.LinqSingle();
+
+            #endregion
+
             #region Quantifier Operations (All, Any, Contains)
 
             //QuantifierOperations.LinqAll();
