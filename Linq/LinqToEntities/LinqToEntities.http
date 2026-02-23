@@ -1,0 +1,11 @@
+@HostAddress = https://localhost:7046/api
+
+###
+
+GET {{HostAddress}}/Department
+Accept: application/json
+
+###
+
+GET {{HostAddress}}/Department/1
+Accept: application/json
