@@ -68,6 +68,12 @@
 
             #endregion
 
+            #region Aggregate Operations (Min, Max, Count, Sum, Average, Sequence)
+
+            //AggregateOperations.LinqAggregateOperations();
+
+            #endregion
+
             #region Quantifier Operations (All, Any, Contains)
 
             //QuantifierOperations.LinqAll();
