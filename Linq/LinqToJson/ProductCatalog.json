@@ -1,0 +1,39 @@
+{
+  "catalog": [
+    {
+      "id": "P001",
+      "name": "Wireless Mouse",
+      "category": "Electronics",
+      "price": 1200,
+      "inStock": true
+    },
+    {
+      "id": "P002",
+      "name": "Coffee Beans",
+      "category": "Grocery",
+      "price": 450,
+      "inStock": false
+    },
+    {
+      "id": "P003",
+      "name": "Bluetooth Speaker",
+      "category": "Electronics",
+      "price": 3500,
+      "inStock": true
+    },
+    {
+      "id": "P004",
+      "name": "Organic Honey",
+      "category": "Grocery",
+      "price": 650,
+      "inStock": true
+    },
+    {
+      "id": "P005",
+      "name": "Running Shoes",
+      "category": "Sports",
+      "price": 4200,
+      "inStock": true
+    }
+  ]
+}
