@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="Linq.Utils/Linq.Utils.csproj" Id="ab4693de-35a5-40d7-94c4-f577201c46a7" />
   <Project Path="Linq/Linq.csproj" />
+  <Project Path="LinqToDataset/LinqToDataset.csproj" Id="153ad834-0dcb-4f8b-a254-7e2592308092" />
   <Project Path="LinqToEntities/LinqToEntities.csproj" Id="c04da91b-227a-48e4-bc3c-f7b3fc8963c5" />
   <Project Path="LinqToObjects/LinqToObjects.csproj" Id="a3118e76-76aa-42e2-8875-d15c80b3d64a" />
 </Solution>

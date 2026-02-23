@@ -1,5 +1,6 @@
 ﻿using Linq.Utils.Common;
 using Linq.Utils.Models;
+using System.Data;
 
 namespace Linq.Utils
 {
@@ -182,6 +183,25 @@ namespace Linq.Utils
                 new Course { Id = 6, Name = "Music", StudentId = 4 } // student doesn't exist
 
             };
+        }
+
+        public static DataTable CreateEmployeeTable()
+        {
+            DataTable table = new DataTable("Employees");
+
+            table.Columns.Add("Id", typeof(int));
+            table.Columns.Add("Name", typeof(string));
+            table.Columns.Add("Department", typeof(string));
+            table.Columns.Add("Age", typeof(int));
+            table.Columns.Add("Salary", typeof(decimal));
+
+            table.Rows.Add(1, "Sneha", "IT", 28, 60000);
+            table.Rows.Add(2, "Anita", "HR", 24, 40000);
+            table.Rows.Add(3, "Rahul", "IT", 35, 90000);
+            table.Rows.Add(4, "Priya", "Finance", 32, 70000);
+            table.Rows.Add(5, "Arjun", "IT", 22, 30000);
+
+            return table;
         }
     }
 }
